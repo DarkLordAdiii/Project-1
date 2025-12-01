@@ -5,7 +5,7 @@
 
 .main{
     width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.42)50%,rgba(0,0,0,0.42)50%), url(1.png);
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(1.png);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -28,7 +28,7 @@
 .logo{
     color: orange;
     font-size: 35px;
-    font-family: 'Lucida Sans';
+    font-family: "Poppins", Arial,sans-serif;
     padding-left: 30px;
     float: left;
     padding-top: 20px;
@@ -58,7 +58,7 @@ ul li{
 ul li a{
     text-decoration: none;
     color: white;
-    font-family: sans-serif;
+    font-family: "Poppins", Arial,sans-serif;
     font-weight: bold;
     transition: 0.3s ease-in-out;
 }
@@ -91,7 +91,7 @@ ul li a:hover{
     background: rgba(0, 0, 0, 0.4);
     padding: 24px 28px;
     border-radius: 16px;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 12px 30px rgba(0,0,0,1);
 }
 
 /* Typography */
@@ -101,12 +101,14 @@ ul li a:hover{
     margin: 4px 0 16px;
     color: orange;
     font-weight: bold;
+    font-family: "Poppins", Arial,sans-serif;
 }
 
 .hero-title{
     font-size: 50px;
     margin: 4px 0 16px;
     font-weight: bold;
+    font-family: "Poppins", Arial,sans-serif;
     color: orange;  /* nice orange */
 }
 
@@ -115,8 +117,9 @@ ul li a:hover{
     line-height: 1.6;
     margin-bottom: 24px;
     color: white;
-    font-weight: bold;
-    font-style: italic;
+    /* font-weight: bold; */
+    font-family: "Poppins", Arial,sans-serif;
+    /* font-style: italic; */
 }
 
 /* Button */
@@ -127,6 +130,7 @@ ul li a:hover{
     background: #ff9800;
     color: #111;
     font-weight: bold;
+    font-family: "Poppins", Arial,sans-serif;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
