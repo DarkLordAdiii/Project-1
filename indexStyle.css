@@ -15,7 +15,7 @@
     width: 1200px;
     height: 75px;
     align-items: center;
-    justify-content: space-between ;
+    justify-content: center ;
     gap: 20px;
 }
 
@@ -28,7 +28,7 @@
 .logo{
     color: orange;
     font-size: 35px;
-    font-family: "Poppins", Arial,sans-serif;
+    font-family: "Poppins", sans-serif;
     padding-left: 30px;
     float: left;
     padding-top: 20px;
@@ -38,6 +38,7 @@
     width: 400px;
     float: left;
     height: 70px;
+    text-decoration: none;
 }
 
 ul{
@@ -56,16 +57,34 @@ ul li{
 }
 
 ul li a{
+    position: relative;
     text-decoration: none;
     color: white;
-    font-family: "Poppins", Arial,sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: bold;
     transition: 0.3s ease-in-out;
 }
 
-ul li a:hover{
-    color: orange;
-    transform: translateY(-3px);
+/* ul li a:hover{
+    text-decoration: underline; */
+    /* color: orange; */
+    /* transform: translateY(-3px); */
+/* } */
+
+ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;              /* start at center */
+    bottom: -3px;
+    width: 0;               /* start invisible */
+    height: 2px;
+    background: orange;     /* underline color */
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+ul li a:hover::after {
+    width: 100%;            /* expands to both sides */
 }
 
 .hero{
@@ -101,14 +120,14 @@ ul li a:hover{
     margin: 4px 0 16px;
     color: orange;
     font-weight: bold;
-    font-family: "Poppins", Arial,sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .hero-title{
     font-size: 50px;
     margin: 4px 0 16px;
     font-weight: bold;
-    font-family: "Poppins", Arial,sans-serif;
+    font-family: "Poppins", sans-serif;
     color: orange;  /* nice orange */
 }
 
@@ -118,7 +137,7 @@ ul li a:hover{
     margin-bottom: 24px;
     color: white;
     /* font-weight: bold; */
-    font-family: "Poppins", Arial,sans-serif;
+    font-family: "Poppins", sans-serif;
     /* font-style: italic; */
 }
 
@@ -130,7 +149,7 @@ ul li a:hover{
     background: #ff9800;
     color: #111;
     font-weight: bold;
-    font-family: "Poppins", Arial,sans-serif;
+    font-family: "Poppins", sans-serif;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
